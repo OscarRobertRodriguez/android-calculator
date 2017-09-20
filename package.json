@@ -22,7 +22,7 @@
   "scripts": {
     "build": "webpack",
     "deploy": "npm run build && git subtree push --prefix dist origin gh-pages",
-    "serve": "webpack-dev-server"
+    "serve": "webpack-dev-server --hot"
   },
   "description": "",
   "bugs": {
