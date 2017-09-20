@@ -1,0 +1,29 @@
+{
+  "name": "android-calculator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/OscarRobertRodriguez/android-calculator.git"
+  },
+  "author": "Oscar Rodriguez <oscarrobertrodriguez@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.6.0"
+  },
+  "scripts": {
+    "build": "webpack",
+    "deploy": "npm run build && git subtree push --prefix dist origin gh-pages"
+  },
+  "description": "",
+  "bugs": {
+    "url": "https://github.com/OscarRobertRodriguez/android-calculator/issues"
+  },
+  "homepage": "https://github.com/OscarRobertRodriguez/android-calculator#readme"
+}
