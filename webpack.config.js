@@ -29,7 +29,9 @@ const config = {
 	},
 	plugins: [
 		new ExtractTextPlugin('style.css'),
-		new HtmlWebpackPlugin()
+		new HtmlWebpackPlugin({
+			template: 'src/index.html'
+		})
 	]
 
 }; 

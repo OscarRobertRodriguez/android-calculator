@@ -16,11 +16,13 @@
     "extract-text-webpack-plugin": "^3.0.0",
     "html-webpack-plugin": "^2.30.1",
     "style-loader": "^0.18.2",
-    "webpack": "^3.6.0"
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.8.2"
   },
   "scripts": {
     "build": "webpack",
-    "deploy": "npm run build && git subtree push --prefix dist origin gh-pages"
+    "deploy": "npm run build && git subtree push --prefix dist origin gh-pages",
+    "serve": "webpack-dev-server"
   },
   "description": "",
   "bugs": {
