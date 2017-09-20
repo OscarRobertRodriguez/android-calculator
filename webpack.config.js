@@ -1,6 +1,8 @@
 
 const path = require('path');
+const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = {
 	entry: './src/index.js',
@@ -26,7 +28,8 @@ const config = {
 		]
 	},
 	plugins: [
-		new ExtractTextPlugin('style.css')
+		new ExtractTextPlugin('style.css'),
+		new HtmlWebpackPlugin()
 	]
 
 }; 
