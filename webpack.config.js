@@ -6,7 +6,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
 
-
 const config = {
 	entry: './src/index.js',
 	output: {

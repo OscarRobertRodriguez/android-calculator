@@ -24,7 +24,8 @@
   "scripts": {
     "build": "webpack",
     "deploy": "npm run build && git subtree push --prefix dist origin gh-pages",
-    "serve": "webpack-dev-server --hot"
+    "dev": "webpack-dev-server --progress --colors",
+	"start": "webpack && npm run dev"
   },
   "description": "",
   "bugs": {
