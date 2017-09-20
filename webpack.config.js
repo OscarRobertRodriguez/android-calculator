@@ -18,9 +18,7 @@ const config = {
 				test: /\.js$/ 
 			},
 			{
-				loader: ExtractTextPlugin.extract({
-					use: 'css-loader'
-				}),
+				use: ['style-loader', 'css-loader'],
 				test: /\.css$/
 			}
 
@@ -28,7 +26,7 @@ const config = {
 		]
 	},
 	plugins: [
-		new ExtractTextPlugin('style.css'),
+		// new ExtractTextPlugin('style.css'),
 		new HtmlWebpackPlugin({
 			template: 'src/index.html'
 		})
