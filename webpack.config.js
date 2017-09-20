@@ -5,7 +5,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
-const extract = ExtractTextPlugin.extract({ use: 'css-loader' }); 
+
 
 const config = {
 	entry: './src/index.js',
@@ -21,7 +21,9 @@ const config = {
 				test: /\.js$/ 
 			},
 			{
-				use: ['style-loader', 'css-loader'],
+				loader: ExtractTextPlugin.extract({
+					use: 'css-loader'
+				}),
 				test: /\.css$/
 			}
 
@@ -29,7 +31,7 @@ const config = {
 		]
 	},
 	plugins: [
-		// new ExtractTextPlugin('style.css'),
+		new ExtractTextPlugin('style.css'),
 		new HtmlWebpackPlugin({
 			template: 'src/index.html'
 		})
