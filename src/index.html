@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Android Calculator</title>
-	
-</head>
-<body>
-	<p>body</p>
-	
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<title>Android Calculator</title>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	</head>
+	<body>
+		<main class="phone">
+			<div class="phone_frame">
+				<section class="calculator_container">
+					<div class="screen">
+						<input class="screen_input" >
+						<input class="screen_result" >
+					</div>
+					
+					<div class="buttons_container">
+						<div class="buttons_left-side">
+							<div>
+								<div class="btn btn-dark" value = '7'>7</div>
+								<div class="btn btn-dark" value = '8'>8</div>
+								<div class="btn btn-dark" value = '9'>9</div>
+							</div>
+							<div>
+								<div class="btn btn-dark" value = '4'>4</div>
+								<div class="btn btn-dark" value = '5'>5</div>
+								<div class="btn btn-dark" value = '6'>6</div>
+							</div>
+							<div>
+								<div class="btn btn-dark" value = '1'>1</div>
+								<div class="btn btn-dark" value = '2'>2</div>
+								<div class="btn btn-dark" value = '3'>3</div>
+							</div>
+							<div>
+								<div class="btn btn-dark" value = '.'>.</div>
+								<div class="btn btn-dark" value = '0'>0</div>
+								<div class="btn btn-dark" value = '='>&#61;</div>
+							</div>
+						</div>
+						<div class="buttons_right-side">
+							<div class="btn btn-light" id='delBtn' value = 'DEL'>DEL</div>
+							<div class="btn btn-light" value = '÷'>&#xf7;</div>
+							<div class="btn btn-light" value = '×'>&#xd7;</div>
+							<div class="btn btn-light" value = '−'>&minus;</div>
+							<div class="btn btn-light" value = '+'>&#43;</div>
+						</div>
+						<div class="history_slide" id="history">
+							<div class='arrow-left'></div>
+
+							<ul class="history_list">
+								<h3 class='history-title'>Notes</h3>
+					 			<p class="history-text">holding and releasing the delete btn will clear the screen</p>
+					 			<h3 class='history-title'>Future Features</h3>
+					 			<p class="history-text">history screen to show last 10 results</p>
+					 			<p class="history-text">more complex math support scientific</p>
+					 			<h3 class='history-title'>Author</h3>
+					 			<p class="history-text">Oscar Rodriguez</p>
+							</ul>
+							
+						</div>
+					</div>
+					
+				</section>
+			</div>
+		</main>
+		<script src="../dist/bundle.js"></script>
+	</body>
 </html>

@@ -18,14 +18,14 @@
     "extract-text-webpack-plugin": "^3.0.0",
     "html-webpack-plugin": "^2.30.1",
     "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.8.2"
   },
   "scripts": {
-    "build": "webpack",
+    "build": "webpack -p",
     "deploy": "npm run build && git subtree push --prefix dist origin gh-pages",
-    "dev": "webpack-dev-server --progress --colors",
-	"start": "webpack && npm run dev"
+    "dev": "webpack-dev-server --progress --colors --hot"
   },
   "description": "",
   "bugs": {

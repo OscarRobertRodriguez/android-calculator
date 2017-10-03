@@ -11,20 +11,32 @@ const config = {
 	output: {
 		path: path.resolve(__dirname, 'dist'),
 		filename: 'bundle.js', 
-		publicPath: './'
+		publicPath: 'dist/'
 	},
 	module: {
 		rules: [
 			{
 				use: 'babel-loader',
-				test: /\.js$/ 
+				test: /\.js$/,
+				exclude: /node_modules/  
 			},
 			{
-				loader: ExtractTextPlugin.extract({
-					use: 'css-loader'
-				}),
+
+				use: [
+				{
+					loader: 'style-loader'
+				},
+				{
+					loader: 'css-loader'
+				}
+				],
 				test: /\.css$/
-			}
+			},
+			{
+				use:'url-loader',
+				test: /\.(woff|woff2)$/
+
+			},
 
 
 		]
