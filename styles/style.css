@@ -23,11 +23,11 @@
 body {
 	font-family: 'Roboto Condensed';
 	font-weight: 200;
-background: #49d6e1; /* Old Browsers */
-background: -webkit-radial-gradient(center,#49d6e1,#3d3c47); /*Safari 5.1-6*/
-background: -o-radial-gradient(center,#49d6e1,#3d3c47); /*Opera 11.1-12*/
-background: -moz-radial-gradient(center,#49d6e1,#3d3c47); /*Fx 3.6-15*/
-background: radial-gradient(ellipse at center, #49d6e1, #3d3c47); /*Standard*/
+	background: #49d6e1; /* Old Browsers */
+	background: -webkit-radial-gradient(center,#49d6e1,#3d3c47); /*Safari 5.1-6*/
+	background: -o-radial-gradient(center,#49d6e1,#3d3c47); /*Opera 11.1-12*/
+	background: -moz-radial-gradient(center,#49d6e1,#3d3c47); /*Fx 3.6-15*/
+	background: radial-gradient(ellipse at center, #49d6e1, #3d3c47); /*Standard*/
 	display: flex;
 	justify-content: center;
 }
@@ -177,6 +177,7 @@ input {
 @media(min-width: 800px) {
 	.phone {
         margin-top: 150px;
+        margin-bottom: 50px;
 	}
 }
 
@@ -309,37 +310,4 @@ input {
 }
 
 
-/* .history_list {
-   display: flex;
-   flex-direction: column;
-   width: 90%;
-   margin: 0;
-   padding: 0;
-   list-style-type: none;
-   padding-left: 30px;
 
- }
-
-.history_list-item {
-	display: block;
-	padding: 0px;
-}
-
-.history-top, .history-math {
-	padding: 1px;
-	margin:0;
-}
-
-.history-top {
-	font-size: 1.5rem;
-	text-align: right;
-}
-
-.history-math {
-	text-align: right;
-	font-size: 1rem;
-	margin: 0;
-	border-bottom: 1px solid black;
-	color: RGB(99, 99, 99);
-	padding-bottom: 2px;
-}*/
