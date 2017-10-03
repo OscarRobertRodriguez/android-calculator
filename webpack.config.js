@@ -22,14 +22,10 @@ const config = {
 			},
 			{
 
-				use: [
-				{
-					loader: 'style-loader'
-				},
-				{
-					loader: 'css-loader'
-				}
-				],
+				use: ExtractTextPlugin.extract({
+					fallback: 'style-loader',
+					use: 'css-loader'
+				}),
 				test: /\.css$/
 			},
 			{
