@@ -36,6 +36,9 @@ input {
 	outline: none;
 }
 
+button {
+	display: block;
+}
 /* Layout for Calculator */
 
 
