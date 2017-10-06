@@ -211,6 +211,7 @@ button {
 	cursor: pointer;
 	transition: opacity .1ms ease-out;
 	border: none;
+	outline: none;
 }
 
 .btn:active {
