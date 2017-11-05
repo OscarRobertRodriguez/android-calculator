@@ -212,6 +212,7 @@ button {
 	transition: opacity .1ms ease-out;
 	border: none;
 	outline: none;
+	border-radius:0;
 }
 
 .btn:active {
